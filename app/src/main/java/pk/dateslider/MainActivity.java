@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
 
-        HorizontalDaySlider daySlider = (HorizontalDaySlider) findViewById(R.id.horizontal_linear_layout);
+        HorizontalDaySlider daySlider = findViewById(R.id.horizontal_linear_layout);
         daySlider.setDayLimits(10);
         daySlider.setCurrentSelectedDayPosition(3);
         daySlider.setDayListener(new HorizontalDaySlider.DayListener() {
